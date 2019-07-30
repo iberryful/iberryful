@@ -23,19 +23,6 @@
     </item>
     
     <item>
-      <title>About</title>
-      <link>https://csnotes.dev/about/</link>
-      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/about/</guid>
-      
-        <description>Hugo is a static site engine written in Go.
-It makes use of a variety of open source projects including:
- Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
-      
-    </item>
-    
-    <item>
       <title>Leetcode 989</title>
       <link>https://csnotes.dev/post/2019/leetcode-989/</link>
       <pubDate>Tue, 30 Jul 2019 21:15:19 +0800</pubDate>
@@ -135,6 +122,19 @@ It makes use of a variety of open source projects including:
       <guid>https://csnotes.dev/post/this-is-a-very-long-title/</guid>
       
         <description>This is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long titleThis is a very long title</description>
+      
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://csnotes.dev/about/</link>
+      <pubDate>Sun, 20 Aug 2017 21:38:52 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/about/</guid>
+      
+        <description>Hugo is a static site engine written in Go.
+It makes use of a variety of open source projects including:
+ Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
       
     </item>
     

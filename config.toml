@@ -1,0 +1,5 @@
+baseURL = "https://csnotes.dev"
+languageCode = "zh-cn"
+title = "CSNotes"
+theme = "temple"
+publishDir = "docs"

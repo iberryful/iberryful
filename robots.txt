@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://csnotes.dev/sitemap.xml

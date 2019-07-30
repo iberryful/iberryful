@@ -1,66 +1,71 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+<?xml-stylesheet type="text/xsl" href="https://csnotes.dev/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://csnotes.dev/en/</loc>
-    <lastmod>2019-07-30T13:52:55+08:00</lastmod>
-    <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://csnotes.dev/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://csnotes.dev/en/"
-                />
+    <loc>https://csnotes.dev/en/post/jane-theme-preview/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/hello/</loc>
-    <lastmod>2019-07-30T13:52:55+08:00</lastmod>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://csnotes.dev/hello/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://csnotes.dev/en/hello/"
-                />
+    <loc>https://csnotes.dev/en/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://csnotes.dev/en/categories/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
     <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://csnotes.dev/categories/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://csnotes.dev/en/categories/"
-                />
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/en/post/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
   <url>
     <loc>https://csnotes.dev/en/tags/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
     <priority>0</priority>
-    <xhtml:link
-                rel="alternate"
-                hreflang="cn"
-                href="https://csnotes.dev/tags/"
-                />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://csnotes.dev/en/tags/"
-                />
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/en/categories/docs/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/en/categories/index/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/en/tags/preview/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/en/categories/shortcodes/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/en/tags/shortcodes/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/en/tags/tag-6/</loc>
+    <lastmod>2019-07-30T20:47:54+08:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

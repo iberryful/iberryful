@@ -1,14 +1,42 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on CSNotes</title>
+    <title>Categories on CS Notes</title>
     <link>https://csnotes.dev/en/categories/</link>
-    <description>Recent content in Categories on CSNotes</description>
+    <description>Recent content in Categories on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-cn</language>
+    <language>en</language>
+    <lastBuildDate>Mon, 01 Jan 2018 16:01:23 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/en/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>docs</title>
+      <link>https://csnotes.dev/en/categories/docs/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/en/categories/docs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>index</title>
+      <link>https://csnotes.dev/en/categories/index/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/en/categories/index/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>shortcodes</title>
+      <link>https://csnotes.dev/en/categories/shortcodes/</link>
+      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/en/categories/shortcodes/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>

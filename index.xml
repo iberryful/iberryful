@@ -6,7 +6,7 @@
     <description>Recent content on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 21:15:19 +0800</lastBuildDate>
     
         <atom:link href="https://csnotes.dev/index.xml" rel="self" type="application/rss+xml" />
     
@@ -32,6 +32,17 @@
         <description>Hugo is a static site engine written in Go.
 It makes use of a variety of open source projects including:
  Cobra Viper J Walter Weatherman Cast  Learn more and contribute on GitHub.</description>
+      
+    </item>
+    
+    <item>
+      <title>Leetcode 989</title>
+      <link>https://csnotes.dev/post/2019/leetcode-989/</link>
+      <pubDate>Tue, 30 Jul 2019 21:15:19 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/post/2019/leetcode-989/</guid>
+      
+        <description>example</description>
       
     </item>
     

@@ -6,7 +6,7 @@
     <description>Recent content in Posts on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 06 Mar 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jul 2019 21:15:19 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -18,6 +18,15 @@
       
       <guid>https://csnotes.dev/post/jane-theme-preview/</guid>
       <description>主题预览,内容有待填充。</description>
+    </item>
+    
+    <item>
+      <title>Leetcode 989</title>
+      <link>https://csnotes.dev/post/2019/leetcode-989/</link>
+      <pubDate>Tue, 30 Jul 2019 21:15:19 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/post/2019/leetcode-989/</guid>
+      <description>example</description>
     </item>
     
     <item>

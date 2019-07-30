@@ -29,14 +29,5 @@
       <description>hello</description>
     </item>
     
-    <item>
-      <title>Hello2</title>
-      <link>https://csnotes.dev/hello2/</link>
-      <pubDate>Tue, 30 Jul 2019 13:52:55 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/hello2/</guid>
-      <description>hello</description>
-    </item>
-    
   </channel>
 </rss>

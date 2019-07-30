@@ -1,5 +1,29 @@
-baseURL = "https://csnotes.dev"
+baseURL = "https://csnotes.dev/"
 languageCode = "zh-cn"
 title = "CSNotes"
-theme = "temple"
+theme = "simple"
 publishDir = "docs"
+
+DefaultContentLanguage = "cn"
+
+[languages]
+  [languages.en]
+    contentDir = "content/en"
+    languageName = "English"
+    weight = 1
+  [languages.cn]
+    contentDir = "content/cn"
+    languageName = "Chinese"
+    weight = 2
+
+[params]
+  topmenu = "categories"
+  dateformatpretty = "2006-09-09"
+  toc = true
+
+[taxonomies]
+  tag = "tags"
+  category = "categories"
+
+[author]
+  name = "Rui Ban"

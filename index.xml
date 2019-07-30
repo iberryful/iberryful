@@ -5,7 +5,7 @@
     <link>https://csnotes.dev/</link>
     <description>Recent content on CSNotes</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>zh-CN</language>
+    <language>zh-cn</language>
     <lastBuildDate>Tue, 30 Jul 2019 13:52:55 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/index.xml" rel="self" type="application/rss+xml" />
@@ -17,24 +17,6 @@
       <pubDate>Tue, 30 Jul 2019 13:52:55 +0800</pubDate>
       
       <guid>https://csnotes.dev/hello/</guid>
-      <description>hello</description>
-    </item>
-    
-    <item>
-      <title>Hello1</title>
-      <link>https://csnotes.dev/hello1/</link>
-      <pubDate>Tue, 30 Jul 2019 13:52:55 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/hello1/</guid>
-      <description>hello</description>
-    </item>
-    
-    <item>
-      <title>Hello2</title>
-      <link>https://csnotes.dev/hello2/</link>
-      <pubDate>Tue, 30 Jul 2019 13:52:55 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/hello2/</guid>
       <description>hello</description>
     </item>
     

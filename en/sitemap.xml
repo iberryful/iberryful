@@ -3,63 +3,63 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://csnotes.dev/en/</loc>
+    <loc>https://csnotes.dev/</loc>
     <lastmod>2019-07-30T13:52:55+08:00</lastmod>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
+                href="https://csnotes.dev/cn/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
                 href="https://csnotes.dev/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://csnotes.dev/en/"
-                />
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/hello/</loc>
+    <loc>https://csnotes.dev/hello/</loc>
     <lastmod>2019-07-30T13:52:55+08:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
+                href="https://csnotes.dev/cn/hello/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
                 href="https://csnotes.dev/hello/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://csnotes.dev/en/hello/"
-                />
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/categories/</loc>
+    <loc>https://csnotes.dev/categories/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
+                href="https://csnotes.dev/cn/categories/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
                 href="https://csnotes.dev/categories/"
                 />
-    <xhtml:link
-                rel="alternate"
-                hreflang="en"
-                href="https://csnotes.dev/en/categories/"
-                />
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/tags/</loc>
+    <loc>https://csnotes.dev/tags/</loc>
     <priority>0</priority>
     <xhtml:link
                 rel="alternate"
                 hreflang="cn"
-                href="https://csnotes.dev/tags/"
+                href="https://csnotes.dev/cn/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="https://csnotes.dev/en/tags/"
+                href="https://csnotes.dev/tags/"
                 />
   </url>
   

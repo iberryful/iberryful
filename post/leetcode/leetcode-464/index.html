@@ -68,7 +68,7 @@
 
 <meta itemprop="datePublished" content="2019-07-31T10:13:43&#43;08:00" />
 <meta itemprop="dateModified" content="2019-07-31T10:13:43&#43;08:00" />
-<meta itemprop="wordCount" content="830">
+<meta itemprop="wordCount" content="631">
 
 
 
@@ -168,64 +168,6 @@
   </ul>
 </nav>
 
-
-  
-    
-
-
-
-
-
-
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css" integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css" integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin="anonymous">
-
-
-
-
-<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
-
-<div class="pswp__bg"></div>
-
-<div class="pswp__scroll-wrap">
-    
-    <div class="pswp__container">
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-      <div class="pswp__item"></div>
-    </div>
-    
-    <div class="pswp__ui pswp__ui--hidden">
-    <div class="pswp__top-bar">
-      
-      <div class="pswp__counter"></div>
-      <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
-      <button class="pswp__button pswp__button--share" title="Share"></button>
-      <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
-      <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
-      
-      
-      <div class="pswp__preloader">
-        <div class="pswp__preloader__icn">
-          <div class="pswp__preloader__cut">
-            <div class="pswp__preloader__donut"></div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
-      <div class="pswp__share-tooltip"></div>
-    </div>
-    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
-    </button>
-    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
-    </button>
-    <div class="pswp__caption">
-      <div class="pswp__caption__center"></div>
-    </div>
-    </div>
-    </div>
-</div>
 
   
 
@@ -377,36 +319,6 @@
 
 <p><a href="https://leetcode.com/problems/can-i-win/">https://leetcode.com/problems/can-i-win/</a></p>
 
-<p>In the &ldquo;100 game,&rdquo; two players take turns adding, to a running total, any integer from 1..10. The player who first causes the running total to reach or exceed 100 wins.</p>
-
-<p>What if we change the game so that players cannot re-use integers?</p>
-
-<p>For example, two players might take turns drawing from a common pool of numbers of 1..15 <strong>without replacement</strong> until they reach a total &gt;= 100.</p>
-
-<p>Given an integer <code>maxChoosableInteger</code> and another integer <code>desiredTotal</code>, determine if the first player to move can force a win, assuming both players play optimally.</p>
-
-<p>You can always assume that maxChoosableInteger will not be larger than 20 and desiredTotal will not be larger than 300.</p>
-
-<p><strong>Example</strong></p>
-
-<hr />
-
-<p><strong>Input:</strong>
-maxChoosableInteger = 10
-desiredTotal = 11</p>
-
-<p><strong>Output:</strong>
-false</p>
-
-<p><strong>Explanation:</strong>
-No matter which integer the first player choose, the first player will lose.
-The first player can choose an integer from 1 up to 10.
-If the first player choose 1, the second player can only choose integers from 2 up to 10.
-The second player will win by choosing 10 and get a total = 11, which is &gt;= desiredTotal.
-Same with other integers chosen by the first player, the second player will always win.</p>
-
-<hr />
-
 <p>两人轮流从区间<code>[1, maxChoosableInteger]</code>取数，每个数只能用一次，先达到<code>desiredTotal</code>者胜。判断先手是否必胜。</p>
 
 <h2 id="分析">分析</h2>
@@ -537,6 +449,19 @@ A取k，使得自己得分最大，这里k可以为<code>[1, maxChoosableInteger
       
       <nav class="post-nav">
         
+          <a class="prev" href="/post/leetcode/leetcode-964/">
+            
+            <i class="iconfont">
+              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
+</svg>
+
+            </i>
+            <span class="prev-text nav-default">LeetCode 964</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
         
           <a class="next" href="/post/golang/pointer-in-go/">
             <span class="next-text nav-default">Golang中的指针</span>
@@ -663,23 +588,10 @@ A取k，使得自己得分最大，这里k可以为<code>[1, maxChoosableInteger
 
 <script type="text/javascript" src="/js/main.638251f4230630f0335d8c6748e53a96f94b72670920b60c09a56fdc8bece214.js" integrity="sha256-Y4JR9CMGMPAzXYxnSOU6lvlLcmcJILYMCaVv3Ivs4hQ=" crossorigin="anonymous"></script>
 
-  <script type="text/javascript">
-    window.MathJax = {
-      showProcessingMessages: false,
-      messageStyle: 'none'
-    };
-  </script>
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 
 
 
-
-  
-    <script type="text/javascript" src="/js/load-photoswipe.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.js" integrity="sha256-AC9ChpELidrhGHX23ZU53vmRdz3FhKaN9E28+BbcWBw=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js" integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin="anonymous"></script>
-  
 
 
 

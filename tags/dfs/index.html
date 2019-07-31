@@ -1,12 +1,10 @@
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<html lang="zh-cn" itemscope itemtype="http://schema.org/WebPage">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Categories - CS Notes</title>
+  <title>dfs · CS Notes</title>
   
-<link rel="alternate" hreflang="zh-cn" href="https://csnotes.dev/categories/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -36,8 +34,8 @@
 <meta name="generator" content="Hugo 0.56.2" />
 
 
-<link rel="canonical" href="https://csnotes.dev/en/categories/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/en/categories/index.xml%20https://csnotes.dev/en/categories/index.xml%7d" rel="alternate" type="application/rss+xml" title="CS Notes" />
+<link rel="canonical" href="https://csnotes.dev/tags/dfs/" />
+<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/tags/dfs/index.xml%20https://csnotes.dev/tags/dfs/index.xml%7d" rel="alternate" type="application/rss+xml" title="CS Notes" />
 
 
 
@@ -59,17 +57,17 @@
 
 
 
-<meta property="og:title" content="Categories" />
+<meta property="og:title" content="dfs" />
 <meta property="og:description" content="Notes for computer science" />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="https://csnotes.dev/en/categories/" />
+<meta property="og:url" content="https://csnotes.dev/tags/dfs/" />
 
-<meta property="og:updated_time" content="2019-07-31T08:15:20+08:00" />
-<meta itemprop="name" content="Categories">
+<meta property="og:updated_time" content="2019-07-31T19:14:33+08:00" />
+<meta itemprop="name" content="dfs">
 <meta itemprop="description" content="Notes for computer science">
 
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="Categories"/>
+<meta name="twitter:title" content="dfs"/>
 <meta name="twitter:description" content="Notes for computer science"/>
 
 <!--[if lte IE 9]>
@@ -88,7 +86,7 @@
 <body>
   <div id="mobile-navbar" class="mobile-navbar">
   <div class="mobile-header-logo">
-    <a href="/en/" class="logo">CS Notes</a>
+    <a href="/" class="logo">CS Notes</a>
   </div>
   <div class="mobile-navbar-icon">
     <span></span>
@@ -102,28 +100,28 @@
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/">Home</a>
+            <a class="menu-item-link" href="https://csnotes.dev/">主页</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/post/">Archives</a>
+            <a class="menu-item-link" href="https://csnotes.dev/post/">归档</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/tags/">Tags</a>
+            <a class="menu-item-link" href="https://csnotes.dev/tags/">标签</a>
           
         
       </li><li class="mobile-menu-item">
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/categories/">Categories</a>
+            <a class="menu-item-link" href="https://csnotes.dev/categories/">分类</a>
           
         
       </li>
@@ -139,20 +137,20 @@
 </svg>
 
             </i>
-            Language
+            语言
           </a>
         </div>
         <ul class="mobile-submenu-list">
           
             <li>
               
-                <a href="https://csnotes.dev/">中文</a>
+                <a href="https://csnotes.dev/"><strong>中文</strong></a>
               
             </li>
           
             <li>
               
-                <a href="https://csnotes.dev/en/"><strong>English</strong></a>
+                <a href="https://csnotes.dev/en/">English</a>
               
             </li>
           
@@ -172,7 +170,7 @@
 
   <header id="header" class="header container">
     <div class="logo-wrapper">
-  <a href="/en/" class="logo">
+  <a href="/" class="logo">
     
       CS Notes
     
@@ -187,7 +185,7 @@
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/">Home</a>
+            <a class="menu-item-link" href="https://csnotes.dev/">主页</a>
           
 
         
@@ -198,7 +196,7 @@
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/post/">Archives</a>
+            <a class="menu-item-link" href="https://csnotes.dev/post/">归档</a>
           
 
         
@@ -209,7 +207,7 @@
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/tags/">Tags</a>
+            <a class="menu-item-link" href="https://csnotes.dev/tags/">标签</a>
           
 
         
@@ -220,7 +218,7 @@
         
           
           
-            <a class="menu-item-link" href="https://csnotes.dev/en/categories/">Categories</a>
+            <a class="menu-item-link" href="https://csnotes.dev/categories/">分类</a>
           
 
         
@@ -239,16 +237,16 @@
 </svg>
 
           </i>
-          English
+          中文
         </a>
         <ul class="submenu">
           
             
-              <li>
-                <a href="https://csnotes.dev/">中文</a>
-              </li>
-            
           
+            
+              <li>
+                <a href="https://csnotes.dev/en/">English</a>
+              </li>
             
           
         </ul>
@@ -266,47 +264,53 @@
       <div class="content-wrapper">
         <div id="content" class="content container">
           
+
+<section id="archive" class="archive">
   
+    
+      <div class="archive-title tag">
+        <h2 class="archive-name">标签： dfs</h2>
+      </div>
+    
+  
+
+  
+    <div class="archive-post">
+      <time datetime="2019-07-31" class="archive-post-time">
+        2019-07-31
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/leetcode/leetcode-964/" class="archive-post-link">
+          LeetCode 964
+        </a>
+      </span>
+    </div>
+  
+</section>
+
+
+
+
+
+
   
   
   
 
   
   
-    
-    
-    
-    
-      <section id="archive" class="archive">
-        <div class="archive-title">
-        </div>
-          <div class="collection-title">
-            <h2 class="archive-year">
-              <a href="https://csnotes.dev/en/categories/golang/">
-                Category: golang
-              </a>
-            </h2>
-          </div>
-
-          
-            <div class="archive-post">
-              <time datetime="2019-07-31" class="archive-post-time">
-                2019-07-31
-              </time>
-              <span class="archive-post-title">
-                <a href="/en/post/golang/pointer-in-go/" class="archive-post-link">
-                  Pointer in Go
-                </a>
-              </span>
-            </div>
-          
-          
-      </section>
-    
-    
 
   
   
+
+  
+  
+
+  
+  
+
+
+
 
 
         </div>
@@ -329,7 +333,7 @@
     </a>
 
 
-<a href="https://csnotes.dev/en/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
+<a href="https://csnotes.dev/index.xml" rel="noopener alternate" type="application/rss&#43;xml"
     class="iconfont" title="rss" target="_blank">
     <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"

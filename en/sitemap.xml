@@ -2,69 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://csnotes.dev/en/post/jane-theme-preview/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://csnotes.dev/en/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://csnotes.dev/en/categories/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
+    <loc>https://csnotes.dev/en/post/golang/pointer-in-go/</loc>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://csnotes.dev/en/post/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://csnotes.dev/en/tags/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/categories/docs/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <loc>https://csnotes.dev/en/categories/golang/</loc>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/categories/index/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <loc>https://csnotes.dev/en/tags/golang/</loc>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/tags/preview/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/en/categories/shortcodes/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/en/tags/shortcodes/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/en/tags/tag-6/</loc>
-    <lastmod>2018-03-07T16:01:23+08:00</lastmod>
+    <loc>https://csnotes.dev/en/tags/programming-language/</loc>
+    <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   

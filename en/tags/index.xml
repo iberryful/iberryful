@@ -6,35 +6,26 @@
     <description>Recent content in Tags on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 01 Jan 2018 16:01:23 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 31 Jul 2019 08:15:20 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/en/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>preview</title>
-      <link>https://csnotes.dev/en/tags/preview/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      <title>golang</title>
+      <link>https://csnotes.dev/en/tags/golang/</link>
+      <pubDate>Wed, 31 Jul 2019 08:15:20 +0800</pubDate>
       
-      <guid>https://csnotes.dev/en/tags/preview/</guid>
+      <guid>https://csnotes.dev/en/tags/golang/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>shortcodes</title>
-      <link>https://csnotes.dev/en/tags/shortcodes/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
+      <title>programming language</title>
+      <link>https://csnotes.dev/en/tags/programming-language/</link>
+      <pubDate>Wed, 31 Jul 2019 08:15:20 +0800</pubDate>
       
-      <guid>https://csnotes.dev/en/tags/shortcodes/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>tag-6</title>
-      <link>https://csnotes.dev/en/tags/tag-6/</link>
-      <pubDate>Mon, 01 Jan 2018 16:01:23 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/en/tags/tag-6/</guid>
+      <guid>https://csnotes.dev/en/tags/programming-language/</guid>
       <description></description>
     </item>
     

@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on CS Notes</title>
-    <link>https://csnotes.dev/post/</link>
-    <description>Recent content in Posts on CS Notes</description>
+    <title>dp on CS Notes</title>
+    <link>https://csnotes.dev/tags/dp/</link>
+    <description>Recent content in dp on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 31 Jul 2019 10:13:43 +0800</lastBuildDate>
     
-	<atom:link href="https://csnotes.dev/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://csnotes.dev/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://csnotes.dev/post/leetcode/leetcode-464/</guid>
       <description>&lt;p&gt;LeetCode 464 | Can I Win 题解&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Golang中的指针</title>
-      <link>https://csnotes.dev/post/golang/pointer-in-go/</link>
-      <pubDate>Wed, 31 Jul 2019 08:15:20 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/golang/pointer-in-go/</guid>
-      <description>&lt;p&gt;本文将介绍go语言中的指针转换和指针运算。&lt;/p&gt;</description>
     </item>
     
   </channel>

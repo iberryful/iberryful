@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on CS Notes</title>
-    <link>https://csnotes.dev/en/post/</link>
-    <description>Recent content in Posts on CS Notes</description>
+    <title>dp on CS Notes</title>
+    <link>https://csnotes.dev/en/tags/dp/</link>
+    <description>Recent content in dp on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 31 Jul 2019 12:13:43 +0800</lastBuildDate>
     
-	<atom:link href="https://csnotes.dev/en/post/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://csnotes.dev/en/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -18,15 +18,6 @@
       
       <guid>https://csnotes.dev/en/post/leetcode/leetcode-464/</guid>
       <description>&lt;p&gt;Solution to LeetCode 464 | Can I Win&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>Pointer in Go</title>
-      <link>https://csnotes.dev/en/post/golang/pointer-in-go/</link>
-      <pubDate>Wed, 31 Jul 2019 08:15:20 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/en/post/golang/pointer-in-go/</guid>
-      <description>&lt;p&gt;This article introduces pointer type and pointer arithmetic in golang.&lt;/p&gt;</description>
     </item>
     
   </channel>

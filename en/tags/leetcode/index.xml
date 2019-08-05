@@ -6,10 +6,19 @@
     <description>Recent content in leetcode on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 31 Jul 2019 12:13:43 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 05 Aug 2019 10:23:45 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/en/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Leetcode 1144</title>
+      <link>https://csnotes.dev/en/post/leetcode/leetcode-1144/</link>
+      <pubDate>Mon, 05 Aug 2019 10:23:45 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/en/post/leetcode/leetcode-1144/</guid>
+      <description>&lt;p&gt;Solution to leetcode 1144 | Decrease Elements To Make Array Zigzag&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>LeetCode 464</title>

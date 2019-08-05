@@ -3,13 +3,44 @@
   
   <url>
     <loc>https://csnotes.dev/</loc>
-    <lastmod>2019-08-02T15:29:07+08:00</lastmod>
+    <lastmod>2019-08-05T10:23:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://csnotes.dev/categories/</loc>
-    <lastmod>2019-08-02T15:29:07+08:00</lastmod>
+    <lastmod>2019-08-05T10:23:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/post/leetcode/leetcode-1144/</loc>
+    <lastmod>2019-08-05T10:23:45+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/post/</loc>
+    <lastmod>2019-08-05T10:23:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/</loc>
+    <lastmod>2019-08-05T10:23:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/categories/leetcode/</loc>
+    <lastmod>2019-08-05T10:23:45+08:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/leetcode/</loc>
+    <lastmod>2019-08-05T10:23:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -21,31 +52,7 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/post/</loc>
-    <lastmod>2019-08-02T15:29:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/tags/</loc>
-    <lastmod>2019-08-02T15:29:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://csnotes.dev/tags/dp/</loc>
-    <lastmod>2019-08-02T15:29:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/tags/leetcode/</loc>
-    <lastmod>2019-08-02T15:29:07+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/categories/leetcode/</loc>
     <lastmod>2019-08-02T15:29:07+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -78,13 +85,13 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/tags/golang/</loc>
+    <loc>https://csnotes.dev/categories/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/categories/golang/</loc>
+    <loc>https://csnotes.dev/tags/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>

@@ -33,13 +33,13 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/categories/leetcode/</loc>
+    <loc>https://csnotes.dev/en/tags/leetcode/</loc>
     <lastmod>2019-08-05T10:23:45+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/tags/leetcode/</loc>
+    <loc>https://csnotes.dev/en/categories/leetcode/</loc>
     <lastmod>2019-08-05T10:23:45+08:00</lastmod>
     <priority>0</priority>
   </url>
@@ -65,13 +65,13 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/categories/golang/</loc>
+    <loc>https://csnotes.dev/en/tags/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/en/tags/golang/</loc>
+    <loc>https://csnotes.dev/en/categories/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <priority>0</priority>
   </url>

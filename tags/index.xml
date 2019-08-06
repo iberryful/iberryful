@@ -6,7 +6,7 @@
     <description>Recent content in Tags on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 05 Aug 2019 23:26:02 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 06 Aug 2019 09:26:02 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,18 @@
     <item>
       <title>leetcode</title>
       <link>https://csnotes.dev/tags/leetcode/</link>
-      <pubDate>Mon, 05 Aug 2019 23:26:02 +0800</pubDate>
+      <pubDate>Tue, 06 Aug 2019 09:26:02 +0800</pubDate>
       
       <guid>https://csnotes.dev/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>stack</title>
+      <link>https://csnotes.dev/tags/stack/</link>
+      <pubDate>Tue, 06 Aug 2019 09:26:02 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/tags/stack/</guid>
       <description></description>
     </item>
     

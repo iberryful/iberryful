@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>leetcode · CS Notes</title>
+  <title>Leetcode 943 - CS Notes</title>
   
-<link rel="alternate" hreflang="en" href="https://csnotes.dev/en/tags/leetcode/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -24,9 +22,9 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Ban Rui" />
-  <meta name="description" content="Notes for computer science" />
-  <meta name="keywords" content="CS Notes, algorithms, leetcode" />
+<meta name="author" content="Ban Rui" /><meta name="description" content="Solution to LeetCode 943. Find the Shortest Superstring" />
+<meta name="keywords" content="Find the Shortest Superstring, leetcode, leetcode 943, algorithms, solution, dp, dynamic programming" />
+
 
 
 
@@ -36,8 +34,7 @@
 <meta name="generator" content="Hugo 0.56.3" />
 
 
-<link rel="canonical" href="https://csnotes.dev/tags/leetcode/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/tags/leetcode/index.xml%20https://csnotes.dev/tags/leetcode/index.xml%7d" rel="alternate" type="application/rss+xml" title="CS Notes" />
+<link rel="canonical" href="https://csnotes.dev/post/leetcode/leetcode-943/" />
 
 
 
@@ -59,18 +56,26 @@
 
 
 
-<meta property="og:title" content="leetcode" />
-<meta property="og:description" content="Notes for computer science" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://csnotes.dev/tags/leetcode/" />
+<meta property="og:title" content="Leetcode 943" />
+<meta property="og:description" content="Solution to LeetCode 943. Find the Shortest Superstring" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://csnotes.dev/post/leetcode/leetcode-943/" />
+<meta property="article:published_time" content="2019-08-08T16:40:25+08:00" />
+<meta property="article:modified_time" content="2019-08-08T16:40:25+08:00" />
+<meta itemprop="name" content="Leetcode 943">
+<meta itemprop="description" content="Solution to LeetCode 943. Find the Shortest Superstring">
 
-<meta property="og:updated_time" content="2019-08-08T16:40:25+08:00" />
-<meta itemprop="name" content="leetcode">
-<meta itemprop="description" content="Notes for computer science">
 
+<meta itemprop="datePublished" content="2019-08-08T16:40:25&#43;08:00" />
+<meta itemprop="dateModified" content="2019-08-08T16:40:25&#43;08:00" />
+<meta itemprop="wordCount" content="1118">
+
+
+
+<meta itemprop="keywords" content="leetcode,dp," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="leetcode"/>
-<meta name="twitter:description" content="Notes for computer science"/>
+<meta name="twitter:title" content="Leetcode 943"/>
+<meta name="twitter:description" content="Solution to LeetCode 943. Find the Shortest Superstring"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -265,127 +270,281 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-
-<section id="archive" class="archive">
-  
+          <article class="post bg-white">
     
-      <div class="archive-title tag">
-        <h2 class="archive-name">标签： leetcode</h2>
+    <header class="post-header">
+      <h1 class="post-title">Leetcode 943</h1>
+      
+      <div class="post-meta">
+        <time datetime="2019-08-08" class="post-time">
+          2019-08-08
+        </time>
+        <div class="post-category">
+            <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
+            
+          </div>
+        
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
       </div>
+    </header>
+
     
-  
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#题目描述">题目描述</a></li>
+<li><a href="#分析">分析</a></li>
+<li><a href="#解答">解答</a></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
 
-  
-    <div class="archive-post">
-      <time datetime="2019-08-08" class="archive-post-time">
-        2019-08-08
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-943/" class="archive-post-link">
-          Leetcode 943
-        </a>
-      </span>
+    
+    <div class="post-content">
+      <p>Leetcode 943 | Find the Shortest Superstring 题解</p>
+
+<h2 id="题目描述">题目描述</h2>
+
+<p><a href="https://leetcode.com/problems/find-the-shortest-superstring/">https://leetcode.com/problems/find-the-shortest-superstring/</a></p>
+
+<p>给定一个字符串数组<code>A</code>，找到以<code>A</code>中每个字符串作为子字符串的最短字符串。</p>
+
+<p><code>A</code>中没有字符串是<code>A</code>中另一个字符串的子字符串。</p>
+
+<p>示例：</p>
+
+<p>Input: <code>[&quot;catg&quot;,&quot;ctaagt&quot;,&quot;gcta&quot;,&quot;ttca&quot;,&quot;atgcatc&quot;]</code></p>
+
+<p>Output: <code>&quot;gctaagttcatgcatc&quot;</code></p>
+
+<h2 id="分析">分析</h2>
+
+<p>这道题如果用字符串匹配的思路，暴力匹配，复杂度将是<code>O(N!)</code>，这是不可接受的。</p>
+
+<p>仔细分析题目要求，可以归纳出以下要点：</p>
+
+<ul>
+<li>需要寻找数组<code>A</code>的一个排列。</li>
+<li>使得总长度最小。</li>
+<li>任意两元素的排列，长度可能不同。</li>
+</ul>
+
+<p>如果把数组<code>A</code>的每个元素看做一个点，<code>A</code>的所有元素构成一张非对称的有向图<code>G</code>。</p>
+
+<p>图<code>G</code>的边<code>G[i][j]</code>为连接<code>A[i]</code>和<code>A[j]</code>的花费<code>cost(i, j)</code></p>
+
+<p><code>cost[i][j]</code> 表示把<code>A[j]</code>追加在<code>A[i]</code>后，需要额外增加的长度（去除重叠部分），可以用下面的方法计算得到：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
+    <span class="c1"># cost of concat s1 and s2</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)):</span>
+        <span class="k">if</span> <span class="n">s2</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">s1</span><span class="p">[</span><span class="n">i</span><span class="p">:]):</span>
+            <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span> <span class="o">-</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">-</span> <span class="n">i</span><span class="p">)</span>
+        <span class="k">return</span> <span class="nb">len</span><span class="p">(</span><span class="n">s2</span><span class="p">)</span></code></pre></td></tr></table>
+</div>
+</div>
+<p>在<code>O(K*N^2)</code> 的时间复杂度内，可以生成图<code>G</code>，接下来问题变为一个最短路径问题。</p>
+
+<p>在一个强连通图<code>G</code>中，寻找一条遍历路径，使得总路径最短。遍历路径意味着所有点都经过，且每个点只经过一次。这就是著名的旅行者问题(travelling salesman problem, TSP)。</p>
+
+<p>以<code>A = [&quot;aabb&quot;, &quot;ac&quot;, &quot;ba&quot;, &quot;caa&quot;]</code> 为例进行分析，对应的有向图如下所示。</p>
+
+<p><center> <img src="/images/2019-08/tsp-graph.png" alt="" /> </center></p>
+
+<p>解决TSP问题的核心是找到重复子问题，通过动态规划降低复杂度。</p>
+
+<p>假设已经找到了遍历<code>0, 1, 2</code>三个节点的最短路径，记为<code>dp[{0,1,2}]</code>，如果目的地是<code>3</code>，则以<code>3</code>为终点的<strong>一个</strong>(注意不一定是最短)路径为</p>
+
+<p><center ><code>dp[{0,1,2}] + cost(i, 3), 其中i为dp[{0,1,2}]的终点</code> </center></p>
+
+<p>只有<code>dp[{0,1,2}]</code>不足以计算以<code>3</code>为终点的最短路径，因为从<code>dp[{0,1,2}]</code>的终点<code>i</code>到<code>3</code>的距离可能很远，还需要比较<code>{0,1,2}</code>的遍历中以其他点<code>j</code>为终点的最短路径加上<code>cost(j, 3)</code>。</p>
+
+<p>设<code>dp[s][i]</code>为遍历集合<code>s</code>，且以点<code>i</code>为终点的最短路径，那么</p>
+
+<p><code>dp[{0,1,2,3}][3] = max([dp[{0,1,2}][i] + cost(i, 3) for i in {0,1,2}])</code></p>
+
+<p>最终结果为：</p>
+
+<p><code>res = min([dp[{0,1,2,3}][i] for i in {0,1,2,3}])</code></p>
+
+<p>根据以上分析，可以归纳出状态转移方程。</p>
+
+<p>初始状态：</p>
+
+<p><code>dp[{}][i] = 0</code></p>
+
+<p>递推公式：</p>
+
+<p><code>dp[s+{j}][j] = min( [dp[s][i] + cost(i, j) for i in s for j not in s] )</code></p>
+
+<p>最短路径为：</p>
+
+<p><code>min( [dp[{0,1,2,...,n-1}][i] for i in {0,1,2,...,n-1}] )</code></p>
+
+<p>在实现上，可以用位运算表示集合。则<code>dp</code>规模为<code>2^N * N</code>，其中<code>N</code>为节点个数。</p>
+
+<p>本题要求返回最短字符串，<code>dp</code>中用对应的字符串替换最短路径即可。</p>
+
+<h2 id="解答">解答</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span><span class="lnt">43
+</span><span class="lnt">44
+</span><span class="lnt">45
+</span><span class="lnt">46
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">shortestSuperstring</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">str</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="nb">str</span><span class="p">:</span>
+
+        <span class="c1"># 计算节点距离</span>
+        <span class="k">def</span> <span class="nf">cost</span><span class="p">(</span><span class="n">s1</span><span class="p">,</span> <span class="n">s2</span><span class="p">):</span>
+            <span class="c1"># cost of concat s1 and s2</span>
+            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)):</span>
+                <span class="k">if</span> <span class="n">s2</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="n">s1</span><span class="p">[</span><span class="n">i</span><span class="p">:]):</span>
+                    <span class="k">return</span> <span class="n">s2</span><span class="p">[(</span><span class="nb">len</span><span class="p">(</span><span class="n">s1</span><span class="p">)</span> <span class="o">-</span> <span class="n">i</span><span class="p">):]</span>
+            <span class="k">return</span> <span class="n">s2</span>
+
+        <span class="n">N</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+
+        <span class="c1"># 生成有向图</span>
+        <span class="n">graph</span> <span class="o">=</span> <span class="p">[[</span><span class="mi">0</span><span class="p">]</span><span class="o">*</span><span class="n">N</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">)]</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+                <span class="n">graph</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">cost</span><span class="p">(</span><span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">],</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">])</span>
+        
+        <span class="n">dp</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&#34;&#34;</span><span class="p">]</span><span class="o">*</span><span class="n">N</span> <span class="k">for</span> <span class="n">_</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">N</span><span class="p">)]</span>
+
+        <span class="c1"># 状态初始化</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+            <span class="n">dp</span><span class="p">[</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">][</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+
+        <span class="c1"># 遍历所有情况</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">((</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">N</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span><span class="p">):</span>
+            <span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+                <span class="k">if</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">k</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+                    <span class="k">continue</span>
+
+                <span class="c1"># i已遍历，j将要遍历，考虑最后一步是从i到j</span>
+                <span class="k">for</span> <span class="n">j</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">N</span><span class="p">):</span>
+                    <span class="k">if</span> <span class="n">i</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">j</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+                        <span class="k">continue</span>
+                    <span class="n">next_i</span> <span class="o">=</span> <span class="n">i</span> <span class="o">|</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">j</span><span class="p">)</span>
+                    <span class="n">next_val</span> <span class="o">=</span> <span class="n">dp</span><span class="p">[</span><span class="n">i</span><span class="p">][</span><span class="n">k</span><span class="p">]</span> <span class="o">+</span> <span class="n">graph</span><span class="p">[</span><span class="n">k</span><span class="p">][</span><span class="n">j</span><span class="p">]</span>
+                    <span class="k">if</span> <span class="n">dp</span><span class="p">[</span><span class="n">next_i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="s2">&#34;&#34;</span> <span class="ow">or</span> <span class="nb">len</span><span class="p">(</span><span class="n">next_val</span><span class="p">)</span> <span class="o">&lt;</span> <span class="nb">len</span><span class="p">(</span><span class="n">dp</span><span class="p">[</span><span class="n">next_i</span><span class="p">][</span><span class="n">j</span><span class="p">]):</span>
+                        <span class="n">dp</span><span class="p">[</span><span class="n">next_i</span><span class="p">][</span><span class="n">j</span><span class="p">]</span> <span class="o">=</span> <span class="n">next_val</span>
+        
+        <span class="c1"># 寻找最短路径</span>
+        <span class="n">res</span><span class="p">,</span> <span class="n">min_len</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="p">,</span> <span class="nb">float</span><span class="p">(</span><span class="s1">&#39;inf&#39;</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">s</span> <span class="ow">in</span> <span class="n">dp</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]:</span>
+            <span class="k">if</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">min_len</span><span class="p">:</span>
+                <span class="n">res</span><span class="p">,</span> <span class="n">min_len</span> <span class="o">=</span> <span class="n">s</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
+        <span class="k">return</span> <span class="n">res</span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-08-08" class="archive-post-time">
-        2019-08-08
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-940/" class="archive-post-link">
-          Leetcode 940
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-08-06" class="archive-post-time">
-        2019-08-06
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-946/" class="archive-post-link">
-          Leetcode 946
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-08-05" class="archive-post-time">
-        2019-08-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-950/" class="archive-post-link">
-          Leetcode 950
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-08-05" class="archive-post-time">
-        2019-08-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-1145/" class="archive-post-link">
-          Leetcode 1145
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-08-05" class="archive-post-time">
-        2019-08-05
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-1144/" class="archive-post-link">
-          Leetcode 1144
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-08-02" class="archive-post-time">
-        2019-08-02
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-956/" class="archive-post-link">
-          Leetcode 956
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-07-31" class="archive-post-time">
-        2019-07-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-964/" class="archive-post-link">
-          LeetCode 964
-        </a>
-      </span>
-    </div>
-  
-    <div class="archive-post">
-      <time datetime="2019-07-31" class="archive-post-time">
-        2019-07-31
-      </time>
-      <span class="archive-post-title">
-        <a href="/post/leetcode/leetcode-464/" class="archive-post-link">
-          LeetCode 464
-        </a>
-      </span>
-    </div>
-  
-</section>
+
+    
+    
 
 
+    
+    
 
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://csnotes.dev/tags/leetcode/">leetcode</a>
+          <a href="https://csnotes.dev/tags/dp/">dp</a>
+          
+        </div>
 
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/leetcode/leetcode-940/">
+            <span class="next-text nav-default">Leetcode 940</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
 
-
-  
-  
-  
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
 
   
   
@@ -394,14 +553,17 @@
   
 
   
-  
 
   
   
 
+  
 
+  
 
+  
 
+    
 
         </div>
       </div>

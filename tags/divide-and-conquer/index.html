@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>LeetCode 464 - CS Notes</title>
+  <title>divide and conquer · CS Notes</title>
   
-<link rel="alternate" hreflang="en" href="https://csnotes.dev/en/post/leetcode/leetcode-464/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -24,9 +22,9 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Ban Rui" /><meta name="description" content="Solution to leetcode 464" />
-<meta name="keywords" content="leetcode, Can I Win, solution, leetcode 464, dynamic programming, dp" />
-
+<meta name="author" content="Ban Rui" />
+  <meta name="description" content="Notes for computer science" />
+  <meta name="keywords" content="CS Notes, algorithms, leetcode" />
 
 
 
@@ -36,7 +34,8 @@
 <meta name="generator" content="Hugo 0.57.2" />
 
 
-<link rel="canonical" href="https://csnotes.dev/post/leetcode/leetcode-464/" />
+<link rel="canonical" href="https://csnotes.dev/tags/divide-and-conquer/" />
+<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/tags/divide-and-conquer/index.xml%20https://csnotes.dev/tags/divide-and-conquer/index.xml%7d" rel="alternate" type="application/rss+xml" title="CS Notes" />
 
 
 
@@ -58,26 +57,18 @@
 
 
 
-<meta property="og:title" content="LeetCode 464" />
-<meta property="og:description" content="Solution to leetcode 464" />
-<meta property="og:type" content="article" />
-<meta property="og:url" content="https://csnotes.dev/post/leetcode/leetcode-464/" />
-<meta property="article:published_time" content="2019-07-31T10:13:43+08:00" />
-<meta property="article:modified_time" content="2019-07-31T10:13:43+08:00" />
-<meta itemprop="name" content="LeetCode 464">
-<meta itemprop="description" content="Solution to leetcode 464">
+<meta property="og:title" content="divide and conquer" />
+<meta property="og:description" content="Notes for computer science" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://csnotes.dev/tags/divide-and-conquer/" />
 
+<meta property="og:updated_time" content="2019-08-15T10:40:25+08:00" />
+<meta itemprop="name" content="divide and conquer">
+<meta itemprop="description" content="Notes for computer science">
 
-<meta itemprop="datePublished" content="2019-07-31T10:13:43&#43;08:00" />
-<meta itemprop="dateModified" content="2019-07-31T10:13:43&#43;08:00" />
-<meta itemprop="wordCount" content="630">
-
-
-
-<meta itemprop="keywords" content="leetcode,dp," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="LeetCode 464"/>
-<meta name="twitter:description" content="Solution to leetcode 464"/>
+<meta name="twitter:title" content="divide and conquer"/>
+<meta name="twitter:description" content="Notes for computer science"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -272,244 +263,55 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          <article class="post bg-white">
-    
-    <header class="post-header">
-      <h1 class="post-title">LeetCode 464</h1>
-      
-<div class="post-meta">
-  
-  <div><a href="https://csnotes.dev/en/post/leetcode/leetcode-464/">Read in English: LeetCode 464</a></div>
-  
-</div>
-
-      <div class="post-meta">
-        <time datetime="2019-07-31" class="post-time">
-          2019-07-31
-        </time>
-        <div class="post-category">
-            <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
-            
-          </div>
-        
-
-        
-        
-          <span id="busuanzi_container_page_pv">
-            | 阅读 <span id="busuanzi_value_page_pv"></span>
-          </span>
-        
-
-        
-        
-      </div>
-    </header>
-
-    
-    
-<div class="post-toc" id="post-toc">
-  <h2 class="post-toc-title">文章目录</h2>
-  <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li>
-<ul>
-<li><a href="#题目描述">题目描述</a></li>
-<li><a href="#分析">分析</a></li>
-<li><a href="#解答">解答</a></li>
-</ul></li>
-</ul>
-</nav>
-  </div>
-</div>
-
-    
-    <div class="post-content">
-      <p>LeetCode 464 | Can I Win 题解</p>
-
-<h2 id="题目描述">题目描述</h2>
-
-<p><a href="https://leetcode.com/problems/can-i-win/">https://leetcode.com/problems/can-i-win/</a></p>
-
-<p>两人轮流从区间<code>[1, maxChoosableInteger]</code>取数，每个数只能用一次，先达到<code>desiredTotal</code>者胜。判断先手是否必胜。</p>
-
-<h2 id="分析">分析</h2>
-
-<p>题目要求判断先手是否必胜，意味着双方每次都是用最佳策略。</p>
-
-<p>假设先手为A，后手为B，考虑第一步
-A取k，使得自己得分最大，这里k可以为<code>[1, maxChoosableInteger]</code>任何数。</p>
-
-<p>轮到B取，使得自己在当前情况下，得分最大，这里可取的数为<code>[1, maxChoosableInteger]</code>去除已经使用的数。</p>
-
-<p>这里可以提炼出重复子问题：
-<strong>给定目前可选值和得分，求最终能否获胜</strong></p>
-
-<p>对每一个子问题求解：</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span></pre></td>
-<td class="lntd">
-<pre class="chroma">遍历可选值
-    如果获胜直接返回True
-    考虑选择当前值
-        判断对手能否获胜
-            如果对手无法获胜，则自己可以获胜，返回True
-如果对每一个可选值，对手都可以获胜，则自己无法获胜，返回False</pre></td></tr></table>
-</div>
-</div>
-<p>定义函数<code>dp(cur, state)</code>求解子问题</p>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt">1
-</span><span class="lnt">2
-</span><span class="lnt">3
-</span><span class="lnt">4
-</span><span class="lnt">5
-</span><span class="lnt">6
-</span><span class="lnt">7
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">def</span> <span class="nf">dp</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">state</span><span class="p">):</span>
-    <span class="s2">&#34;&#34;&#34;
-</span><span class="s2">    :param cur: current score
-</span><span class="s2">    :param state: used values
-</span><span class="s2">    :returns: True or False indicates whether I win
-</span><span class="s2">    &#34;&#34;&#34;</span>
-    <span class="k">pass</span></code></pre></td></tr></table>
-</div>
-</div>
-<p>为了去除重复计算，可以使用hashmap保存计算结果，这里的<code>state</code>可以使用位运算进行状态压缩。</p>
-
-<p><code>state &amp; (1 &lt;&lt; i)</code> 表示第i个数是否已使用</p>
-
-<p>另外，如果<code>sum([1, maxChoosableInteger]) &lt; desiredTotal</code>,可以直接返回False</p>
-
-<h2 id="解答">解答</h2>
-<div class="highlight"><div class="chroma">
-<table class="lntable"><tr><td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
-</span><span class="lnt"> 2
-</span><span class="lnt"> 3
-</span><span class="lnt"> 4
-</span><span class="lnt"> 5
-</span><span class="lnt"> 6
-</span><span class="lnt"> 7
-</span><span class="lnt"> 8
-</span><span class="lnt"> 9
-</span><span class="lnt">10
-</span><span class="lnt">11
-</span><span class="lnt">12
-</span><span class="lnt">13
-</span><span class="lnt">14
-</span><span class="lnt">15
-</span><span class="lnt">16
-</span><span class="lnt">17
-</span><span class="lnt">18
-</span><span class="lnt">19
-</span><span class="lnt">20
-</span><span class="lnt">21
-</span><span class="lnt">22
-</span></code></pre></td>
-<td class="lntd">
-<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
-    <span class="k">def</span> <span class="nf">canIWin</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">maxChoosableInteger</span><span class="p">:</span> <span class="nb">int</span><span class="p">,</span> <span class="n">desiredTotal</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="nb">bool</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">maxChoosableInteger</span><span class="o">*</span><span class="p">(</span><span class="n">maxChoosableInteger</span><span class="o">+</span><span class="mi">1</span><span class="p">)</span><span class="o">/</span><span class="mi">2</span><span class="o">&lt;</span><span class="n">desiredTotal</span><span class="p">:</span> 
-            <span class="k">return</span> <span class="bp">False</span>
-        <span class="n">cache</span> <span class="o">=</span> <span class="p">{}</span>
-        <span class="k">def</span> <span class="nf">dp</span><span class="p">(</span><span class="n">cur</span><span class="p">,</span> <span class="n">used</span><span class="p">):</span>
-            <span class="k">if</span> <span class="n">used</span> <span class="ow">in</span> <span class="n">cache</span><span class="p">:</span>
-                <span class="k">return</span> <span class="n">cache</span><span class="p">[</span><span class="n">used</span><span class="p">]</span>
-            
-            <span class="c1">#这里从大到小遍历，可以加速计算</span>
-            <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">maxChoosableInteger</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">):</span>
-                <span class="k">if</span> <span class="n">used</span> <span class="o">&amp;</span> <span class="p">(</span><span class="mi">1</span> <span class="o">&lt;&lt;</span> <span class="n">i</span><span class="p">):</span>
-                    <span class="k">continue</span>
-                <span class="k">if</span> <span class="n">cur</span> <span class="o">+</span> <span class="n">i</span> <span class="o">&gt;=</span> <span class="n">desiredTotal</span><span class="p">:</span>
-                    <span class="n">cache</span><span class="p">[</span><span class="n">used</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-                    <span class="k">return</span> <span class="bp">True</span>
-                <span class="k">if</span> <span class="ow">not</span> <span class="n">dp</span><span class="p">(</span><span class="n">cur</span><span class="o">+</span><span class="n">i</span><span class="p">,</span> <span class="n">used</span><span class="o">|</span><span class="p">(</span><span class="mi">1</span><span class="o">&lt;&lt;</span><span class="n">i</span><span class="p">)):</span>
-                    <span class="n">cache</span><span class="p">[</span><span class="n">used</span><span class="p">]</span> <span class="o">=</span> <span class="bp">True</span>
-                    <span class="k">return</span> <span class="bp">True</span>
-            <span class="n">cache</span><span class="p">[</span><span class="n">used</span><span class="p">]</span> <span class="o">=</span> <span class="bp">False</span>
-            <span class="k">return</span> <span class="bp">False</span>
-        <span class="k">return</span> <span class="n">dp</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span></code></pre></td></tr></table>
-</div>
-</div>
-    </div>
-
-    
-    
-
-
-    
-    
-
-    <footer class="post-footer">
-      <div class="post-tags">
-          <a href="https://csnotes.dev/tags/leetcode/">leetcode</a>
-          <a href="https://csnotes.dev/tags/dp/">dp</a>
           
-        </div>
 
-      
-      <nav class="post-nav">
-        
-          <a class="prev" href="/post/leetcode/leetcode-964/">
-            
-            <i class="iconfont">
-              <svg  class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M691.908486 949.511495l75.369571-89.491197c10.963703-12.998035 10.285251-32.864502-1.499144-44.378743L479.499795 515.267417 757.434875 204.940602c11.338233-12.190647 11.035334-32.285311-0.638543-44.850487l-80.46666-86.564541c-11.680017-12.583596-30.356378-12.893658-41.662889-0.716314L257.233596 494.235404c-11.332093 12.183484-11.041474 32.266891 0.657986 44.844348l80.46666 86.564541c1.772366 1.910513 3.706415 3.533476 5.750981 4.877077l306.620399 321.703933C662.505829 963.726242 680.945807 962.528973 691.908486 949.511495z"></path>
-</svg>
-
-            </i>
-            <span class="prev-text nav-default">LeetCode 964</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
-        
-          <a class="next" href="/post/golang/pointer-in-go/">
-            <span class="next-text nav-default">Golang中的指针</span>
-            <span class="prev-text nav-mobile">下一篇</span>
-            
-            <i class="iconfont">
-              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
-  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-  width="18" height="18">
-  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
-</svg>
-
-            </i>
-          </a>
-      </nav>
-    </footer>
-  </article>
-
+<section id="archive" class="archive">
   
-  
-
-  
-  
-
-  
-
-  
-  
-
-  
-
-  
-
-  
-
     
+      <div class="archive-title tag">
+        <h2 class="archive-name">标签： divide and conquer</h2>
+      </div>
+    
+  
+
+  
+    <div class="archive-post">
+      <time datetime="2019-08-15" class="archive-post-time">
+        2019-08-15
+      </time>
+      <span class="archive-post-title">
+        <a href="/post/leetcode/leetcode-932/" class="archive-post-link">
+          Leetcode 932
+        </a>
+      </span>
+    </div>
+  
+</section>
+
+
+
+
+
+
+  
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+  
+  
+
+
+
+
 
         </div>
       </div>

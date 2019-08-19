@@ -2,15 +2,66 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://csnotes.dev/</loc>
-    <lastmod>2019-08-08T16:40:25+08:00</lastmod>
-    <priority>0</priority>
+    <loc>https://csnotes.dev/categories/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/categories/</loc>
+    <loc>https://csnotes.dev/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/divide-and-conquer/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/categories/leetcode/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/leetcode/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/post/leetcode/leetcode-932/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/post/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/</loc>
+    <lastmod>2019-08-15T10:40:25+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/dp/</loc>
     <lastmod>2019-08-08T16:40:25+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -18,36 +69,6 @@
     <lastmod>2019-08-08T16:40:25+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/post/</loc>
-    <lastmod>2019-08-08T16:40:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/tags/</loc>
-    <lastmod>2019-08-08T16:40:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/tags/dp/</loc>
-    <lastmod>2019-08-08T16:40:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/categories/leetcode/</loc>
-    <lastmod>2019-08-08T16:40:25+08:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/tags/leetcode/</loc>
-    <lastmod>2019-08-08T16:40:25+08:00</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -67,7 +88,8 @@
   <url>
     <loc>https://csnotes.dev/tags/stack/</loc>
     <lastmod>2019-08-06T09:26:02+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -78,16 +100,17 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/post/leetcode/leetcode-1145/</loc>
+    <loc>https://csnotes.dev/tags/dfs/</loc>
     <lastmod>2019-08-05T13:02:07+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/tags/dfs/</loc>
+    <loc>https://csnotes.dev/post/leetcode/leetcode-1145/</loc>
     <lastmod>2019-08-05T13:02:07+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
@@ -119,7 +142,7 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/post/golang/pointer-in-go/</loc>
+    <loc>https://csnotes.dev/tags/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -128,19 +151,22 @@
   <url>
     <loc>https://csnotes.dev/categories/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/tags/golang/</loc>
+    <loc>https://csnotes.dev/post/golang/pointer-in-go/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://csnotes.dev/tags/programming-language/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
-    <priority>0</priority>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
   </url>
   
   <url>

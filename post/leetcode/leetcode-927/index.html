@@ -3,10 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>CS Notes</title>
+  <title>Leetcode 927 - CS Notes</title>
   
-<link rel="alternate" hreflang="en" href="https://csnotes.dev/en/" />
-
 
 <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
@@ -24,9 +22,9 @@
 
 <meta name="mobile-web-app-capable" content="yes">
 
-<meta name="author" content="Ban Rui" />
-  <meta name="description" content="Notes for computer science" />
-  <meta name="keywords" content="CS Notes, algorithms, leetcode" />
+<meta name="author" content="Ban Rui" /><meta name="description" content="Solution to LeetCode 927. Three Equal Parts" />
+<meta name="keywords" content="Three Equal Parts, leetcode, leetcode 27, algorithms, solution, sliding window" />
+
 
 
 
@@ -36,8 +34,7 @@
 <meta name="generator" content="Hugo 0.57.2" />
 
 
-<link rel="canonical" href="https://csnotes.dev/" />
-<link href="%7balternate%20%7bRSS%20application/rss&#43;xml%20%20index%20alternate%20%20false%20false%20true%20false%20false%200%7d%20/index.xml%20https://csnotes.dev/index.xml%7d" rel="alternate" type="application/rss+xml" title="CS Notes" />
+<link rel="canonical" href="https://csnotes.dev/post/leetcode/leetcode-927/" />
 
 
 
@@ -59,18 +56,26 @@
 
 
 
-<meta property="og:title" content="CS Notes" />
-<meta property="og:description" content="Notes for computer science" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://csnotes.dev/" />
+<meta property="og:title" content="Leetcode 927" />
+<meta property="og:description" content="Solution to LeetCode 927. Three Equal Parts" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://csnotes.dev/post/leetcode/leetcode-927/" />
+<meta property="article:published_time" content="2019-08-21T12:40:25+08:00" />
+<meta property="article:modified_time" content="2019-08-21T12:40:25+08:00" />
+<meta itemprop="name" content="Leetcode 927">
+<meta itemprop="description" content="Solution to LeetCode 927. Three Equal Parts">
 
-<meta property="og:updated_time" content="2019-08-21T12:40:25+08:00" />
-<meta itemprop="name" content="CS Notes">
-<meta itemprop="description" content="Notes for computer science">
 
+<meta itemprop="datePublished" content="2019-08-21T12:40:25&#43;08:00" />
+<meta itemprop="dateModified" content="2019-08-21T12:40:25&#43;08:00" />
+<meta itemprop="wordCount" content="833">
+
+
+
+<meta itemprop="keywords" content="leetcode," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="CS Notes"/>
-<meta name="twitter:description" content="Notes for computer science"/>
+<meta name="twitter:title" content="Leetcode 927"/>
+<meta name="twitter:description" content="Solution to LeetCode 927. Three Equal Parts"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -183,7 +188,7 @@
   <ul id="menu" class="menu">
     
     
-        <li class="menu-item active">
+        <li class="menu-item">
         
           
           
@@ -265,227 +270,279 @@
     <main id="main" class="main bg-llight">
       <div class="content-wrapper">
         <div id="content" class="content container">
-          
-  <section id="posts" class="posts">
+          <article class="post bg-white">
     
-    
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
+    <header class="post-header">
+      <h1 class="post-title">Leetcode 927</h1>
       
-      <a class="post-link" href="/post/leetcode/leetcode-927/">Leetcode 927</a>
-    </h1>
+      <div class="post-meta">
+        <time datetime="2019-08-21" class="post-time">
+          2019-08-21
+        </time>
+        <div class="post-category">
+            <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
+            
+          </div>
+        
+
+        
+        
+          <span id="busuanzi_container_page_pv">
+            | 阅读 <span id="busuanzi_value_page_pv"></span>
+          </span>
+        
+
+        
+        
+      </div>
+    </header>
+
     
-    <div class="post-meta">
-      <time datetime="2019-08-21" class="post-time">
-        2019-08-21
-      </time>
-      <div class="post-category">
-          <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
     
-    <div class="post-summary">
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li>
+<ul>
+<li><a href="#题目描述">题目描述</a></li>
+<li><a href="#分析">分析</a></li>
+<li><a href="#解答">解答</a>
+<ul>
+<li><a href="#方法一">方法一</a></li>
+<li><a href="#方法二">方法二</a></li>
+</ul></li>
+</ul></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
       <p>Leetcode 927 | Three Equal Parts 题解</p>
+
+<h2 id="题目描述">题目描述</h2>
+
+<p><a href="https://leetcode.com/problems/three-equal-parts/">https://leetcode.com/problems/three-equal-parts/</a></p>
+
+<p>给定一个由<code>0</code>和<code>1</code>组成的数组<code>A</code>，将数组分成<strong>3</strong>个非空的部分，使得所有这些部分表示相同的二进制值。</p>
+
+<p>如果可以做到，请返回任何 <code>[i, j]</code>，其中 <code>i+1 &lt; j</code>，使得：</p>
+
+<ul>
+<li><code>A[0], A[1], ..., A[i]</code> 组成第一部分</li>
+<li><code>A[i+1], A[i+2], ..., A[j-1]</code> 作为第二部分</li>
+<li><code>A[j], A[j+1], ..., A[A.length - 1]</code> 是第三部分</li>
+</ul>
+
+<p>如果无法做到，就返回 <code>[-1, -1]</code>。</p>
+
+<p><strong>示例</strong></p>
+
+<p>Input: <code>[1,0,1,0,1]</code></p>
+
+<p>Output: <code>[0,3]</code></p>
+
+<h2 id="分析">分析</h2>
+
+<p>把只包含0和1的数组分为三部分，要求三部分的二进制表示的值相同。</p>
+
+<p>设三部分为<code>left</code>，<code>mid</code>，<code>right</code>，其中<code>left</code>以下标0开始，right以下标<code>n-1</code>结束，其中<code>n</code>是数组长度。</p>
+
+<p>设置两个滑动下标<code>i</code>和<code>j</code>，用来分割数组。</p>
+
+<p>初始状态：<code>i=0, j = n-1</code></p>
+
+<p>不断移动<code>i</code>和<code>j</code>，使得<code>left == right</code>，然后比较<code>mid</code>与<code>left</code>是否相等，如果相等则返回<code>[i, j]</code>，否则，继续移动<code>i, j</code>。</p>
+
+<p>在移动过程中，若<code>i</code>向右移动，<code>left</code>和<code>mid</code>随之变化，若<code>j</code>向左移动，则<code>right</code>和<code>mid</code>发生变化。</p>
+
+<p>根据这一想法，可以给出<a href="#方法一">方法一</a></p>
+
+<hr />
+
+<p>由于<code>A</code>的长度最大为<code>30000</code>，在滑窗移动过程中，计算<code>mid</code>开销较大，因此可以考虑避免二进制计算，改为判断二进制字符串是否相等。</p>
+
+<p>考虑这样一个事实：每一部分的有效值是第一个<code>1</code>和最后一个<code>1</code>之间的部分。</p>
+
+<p>先统计<code>A</code>中<code>1</code>的数量，如果不能被3整除，直接返回<code>[-1, -1]</code>。</p>
+
+<p>接下来可以直接计算出每一部分中<code>1</code>的数量，进而确定<code>right</code>的有效部分，然后在A中搜索和<code>rigth</code>相等的字符串即可。</p>
+
+<h2 id="解答">解答</h2>
+
+<h3 id="方法一">方法一</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">threeEqualParts</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="n">i</span><span class="p">,</span> <span class="n">j</span>  <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span>
+        <span class="n">l</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">mid</span> <span class="o">=</span> <span class="n">A</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span> <span class="n">A</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">],</span> <span class="nb">int</span><span class="p">(</span><span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span><span class="n">A</span><span class="p">[</span><span class="mi">1</span><span class="p">:</span><span class="o">-</span><span class="mi">1</span><span class="p">])),</span> <span class="mi">2</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">j</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">l</span> <span class="o">==</span> <span class="n">r</span> <span class="ow">and</span> <span class="n">l</span> <span class="o">==</span> <span class="n">mid</span><span class="p">:</span>
+                <span class="k">return</span> <span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="n">j</span><span class="p">]</span>
+            <span class="k">if</span> <span class="n">l</span> <span class="o">&lt;</span> <span class="n">r</span><span class="p">:</span>
+                <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+                <span class="n">l</span> <span class="o">=</span> <span class="n">l</span> <span class="o">*</span><span class="mi">2</span> <span class="o">+</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+                <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">mid</span> <span class="o">-=</span> <span class="mi">2</span> <span class="o">**</span> <span class="p">(</span><span class="n">j</span><span class="o">-</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">l</span> <span class="o">&gt;</span> <span class="n">r</span><span class="p">:</span>
+                <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">+=</span> <span class="mi">2</span> <span class="o">**</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">mid</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">//</span> <span class="mi">2</span>
+                <span class="k">continue</span>
+            <span class="k">if</span> <span class="n">l</span> <span class="o">!=</span> <span class="n">mid</span><span class="p">:</span>
+                <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+                <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                    <span class="n">r</span> <span class="o">+=</span> <span class="mi">2</span> <span class="o">**</span> <span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">-</span><span class="n">j</span><span class="o">-</span><span class="mi">1</span><span class="p">)</span>
+                <span class="n">mid</span> <span class="o">=</span> <span class="n">mid</span> <span class="o">//</span> <span class="mi">2</span>
+                <span class="k">continue</span>
+                
+        <span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span></code></pre></td></tr></table>
+</div>
+</div>
+<h3 id="方法二">方法二</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span></code></pre></td>
+<td class="lntd">
+<pre class="chroma"><code class="language-python" data-lang="python"><span class="k">class</span> <span class="nc">Solution</span><span class="p">:</span>
+    <span class="k">def</span> <span class="nf">threeEqualParts</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">A</span><span class="p">:</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="n">List</span><span class="p">[</span><span class="nb">int</span><span class="p">]:</span>
+        <span class="n">ones</span> <span class="o">=</span> <span class="nb">sum</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">ones</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">ones</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">ones</span> <span class="o">=</span> <span class="n">ones</span> <span class="o">//</span> <span class="mi">3</span>
+        <span class="n">j</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span> <span class="o">-</span> <span class="mi">1</span>
+        <span class="n">s</span> <span class="o">=</span> <span class="s2">&#34;&#34;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="nb">map</span><span class="p">(</span><span class="nb">str</span><span class="p">,</span> <span class="n">A</span><span class="p">))</span>
+        <span class="n">n</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">A</span><span class="p">)</span>
+        <span class="k">while</span> <span class="n">ones</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+            <span class="k">if</span> <span class="n">A</span><span class="p">[</span><span class="n">j</span><span class="p">]</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+                <span class="n">ones</span> <span class="o">-=</span> <span class="mi">1</span>
+            <span class="n">j</span> <span class="o">-=</span> <span class="mi">1</span>
+        <span class="n">right</span> <span class="o">=</span> <span class="n">s</span><span class="p">[</span><span class="n">j</span><span class="o">+</span><span class="mi">1</span><span class="p">:]</span>
+        <span class="n">l</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
+        <span class="n">left</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">right</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">left</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="n">mid</span> <span class="o">=</span> <span class="n">s</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="n">right</span><span class="p">,</span> <span class="n">left</span><span class="o">+</span><span class="n">l</span><span class="p">)</span>
+        <span class="k">if</span> <span class="n">mid</span> <span class="o">==</span> <span class="o">-</span><span class="mi">1</span> <span class="ow">or</span> <span class="n">mid</span> <span class="o">+</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">l</span> <span class="o">&gt;</span> <span class="n">n</span><span class="p">:</span>
+            <span class="k">return</span> <span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">return</span> <span class="p">[</span><span class="n">left</span> <span class="o">+</span> <span class="n">l</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="n">mid</span> <span class="o">+</span> <span class="n">l</span><span class="p">]</span></code></pre></td></tr></table>
+</div>
+</div>
     </div>
-    <div class="read-more">
-      <a href="/post/leetcode/leetcode-927/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
 
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/leetcode/leetcode-932/">Leetcode 932</a>
-    </h1>
     
-    <div class="post-meta">
-      <time datetime="2019-08-15" class="post-time">
-        2019-08-15
-      </time>
-      <div class="post-category">
-          <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
+
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          <a href="https://csnotes.dev/tags/leetcode/">leetcode</a>
           
         </div>
+
       
-      
-      
-    </div>
-  </header>
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/leetcode/leetcode-932/">
+            <span class="next-text nav-default">Leetcode 932</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            
+            <i class="iconfont">
+              <svg class="icon" viewBox="0 0 1024 1024" version="1.1"
+  xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+  width="18" height="18">
+  <path d="M332.091514 74.487481l-75.369571 89.491197c-10.963703 12.998035-10.285251 32.864502 1.499144 44.378743l286.278095 300.375162L266.565125 819.058374c-11.338233 12.190647-11.035334 32.285311 0.638543 44.850487l80.46666 86.564541c11.680017 12.583596 30.356378 12.893658 41.662889 0.716314l377.434212-421.426145c11.332093-12.183484 11.041474-32.266891-0.657986-44.844348l-80.46666-86.564541c-1.772366-1.910513-3.706415-3.533476-5.750981-4.877077L373.270379 71.774697C361.493148 60.273758 343.054193 61.470003 332.091514 74.487481z"></path>
+</svg>
+
+            </i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+
   
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Leetcode 932 | Beautiful Array 题解</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/leetcode/leetcode-932/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
+  
+
+  
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
 
     
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/leetcode/leetcode-943/">Leetcode 943</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-08-08" class="post-time">
-        2019-08-08
-      </time>
-      <div class="post-category">
-          <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Leetcode 943 | Find the Shortest Superstring 题解</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/leetcode/leetcode-943/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/leetcode/leetcode-940/">Leetcode 940</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-08-08" class="post-time">
-        2019-08-08
-      </time>
-      <div class="post-category">
-          <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Leetcode 940 | Distinct Subsequences II 题解</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/leetcode/leetcode-940/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-      <article class="post bg-white">
-  <header class="post-header">
-    <h1 class="post-title">
-      
-      <a class="post-link" href="/post/leetcode/leetcode-946/">Leetcode 946</a>
-    </h1>
-    
-    <div class="post-meta">
-      <time datetime="2019-08-06" class="post-time">
-        2019-08-06
-      </time>
-      <div class="post-category">
-          <a href="https://csnotes.dev/categories/leetcode/"> leetcode </a>
-          
-        </div>
-      
-      
-      
-    </div>
-  </header>
-  
-  <div class="post-content">
-    
-    <div class="post-summary">
-      <p>Leetcode 946 | Validate Stack Sequences 题解</p>
-    </div>
-    <div class="read-more">
-      <a href="/post/leetcode/leetcode-946/" class="read-more-link">阅读全文</a>
-    </div>
-    
-  </div>
-</article>
-
-    
-  </section>
-
-  
-  
-
-
-
-  
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-
-  
-  
-  <nav class="pagination">
-    <ul>
-      
-      <li  class="active" >
-        <a href="/">1</a>
-      </li>
-      
-      <li >
-        <a href="/page/2/">2</a>
-      </li>
-      
-      <li >
-        <a href="/page/3/">3</a>
-      </li>
-      
-    </ul>
-  </nav>
-
-  
-  
-
-
-
-
 
         </div>
       </div>

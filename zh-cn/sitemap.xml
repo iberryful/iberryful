@@ -16,14 +16,14 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/tags/leetcode/</loc>
+    <loc>https://csnotes.dev/categories/leetcode/</loc>
     <lastmod>2019-09-17T10:23:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/categories/leetcode/</loc>
+    <loc>https://csnotes.dev/tags/leetcode/</loc>
     <lastmod>2019-09-17T10:23:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

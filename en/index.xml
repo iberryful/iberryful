@@ -12,46 +12,13 @@
     
     
     <item>
-      <title>Leetcode 1145</title>
-      <link>https://csnotes.dev/en/post/leetcode/leetcode-1145/</link>
+      <title>Posts</title>
+      <link>https://csnotes.dev/en/post/</link>
       <pubDate>Mon, 05 Aug 2019 13:02:07 +0800</pubDate>
       
-      <guid>https://csnotes.dev/en/post/leetcode/leetcode-1145/</guid>
+      <guid>https://csnotes.dev/en/post/</guid>
       
-        <description>&lt;p&gt;Solution to leetcode 1145 | Binary Tree Coloring Game&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 1144</title>
-      <link>https://csnotes.dev/en/post/leetcode/leetcode-1144/</link>
-      <pubDate>Mon, 05 Aug 2019 10:23:45 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/en/post/leetcode/leetcode-1144/</guid>
-      
-        <description>&lt;p&gt;Solution to leetcode 1144 | Decrease Elements To Make Array Zigzag&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>LeetCode 464</title>
-      <link>https://csnotes.dev/en/post/leetcode/leetcode-464/</link>
-      <pubDate>Wed, 31 Jul 2019 12:13:43 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/en/post/leetcode/leetcode-464/</guid>
-      
-        <description>&lt;p&gt;Solution to LeetCode 464 | Can I Win&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Pointer in Go</title>
-      <link>https://csnotes.dev/en/post/golang/pointer-in-go/</link>
-      <pubDate>Wed, 31 Jul 2019 08:15:20 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/en/post/golang/pointer-in-go/</guid>
-      
-        <description>&lt;p&gt;This article introduces pointer type and pointer arithmetic in golang.&lt;/p&gt;</description>
+        <description></description>
       
     </item>
     

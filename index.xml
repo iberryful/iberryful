@@ -6,151 +6,19 @@
     <description>Recent content on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 23 Aug 2019 10:40:25 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 17 Sep 2019 10:23:45 +0800</lastBuildDate>
     
         <atom:link href="https://csnotes.dev/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Leetcode 918</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-918/</link>
-      <pubDate>Fri, 23 Aug 2019 10:40:25 +0800</pubDate>
+      <title>Posts</title>
+      <link>https://csnotes.dev/post/</link>
+      <pubDate>Tue, 17 Sep 2019 10:23:45 +0800</pubDate>
       
-      <guid>https://csnotes.dev/post/leetcode/leetcode-918/</guid>
+      <guid>https://csnotes.dev/post/</guid>
       
-        <description>&lt;p&gt;Leetcode 918 | Maximum Sum Circular Subarray 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 927</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-927/</link>
-      <pubDate>Wed, 21 Aug 2019 12:40:25 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-927/</guid>
-      
-        <description>&lt;p&gt;Leetcode 927 | Three Equal Parts 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 932</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-932/</link>
-      <pubDate>Thu, 15 Aug 2019 10:40:25 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-932/</guid>
-      
-        <description>&lt;p&gt;Leetcode 932 | Beautiful Array 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 943</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-943/</link>
-      <pubDate>Thu, 08 Aug 2019 16:40:25 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-943/</guid>
-      
-        <description>&lt;p&gt;Leetcode 943 | Find the Shortest Superstring 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 940</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-940/</link>
-      <pubDate>Thu, 08 Aug 2019 13:40:25 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-940/</guid>
-      
-        <description>&lt;p&gt;Leetcode 940 | Distinct Subsequences II 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 946</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-946/</link>
-      <pubDate>Tue, 06 Aug 2019 09:26:02 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-946/</guid>
-      
-        <description>&lt;p&gt;Leetcode 946 | Validate Stack Sequences 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 950</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-950/</link>
-      <pubDate>Mon, 05 Aug 2019 23:26:02 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-950/</guid>
-      
-        <description>&lt;p&gt;Leetcode 950 | Reveal Cards In Increasing Order 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 1145</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-1145/</link>
-      <pubDate>Mon, 05 Aug 2019 13:02:07 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-1145/</guid>
-      
-        <description>&lt;p&gt;Leetcode 1145 | Binary Tree Coloring Game 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 1144</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-1144/</link>
-      <pubDate>Mon, 05 Aug 2019 10:23:45 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-1144/</guid>
-      
-        <description>&lt;p&gt;Leetcode 1144 | Decrease Elements To Make Array Zigzag 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Leetcode 956</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-956/</link>
-      <pubDate>Fri, 02 Aug 2019 15:29:07 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-956/</guid>
-      
-        <description>&lt;p&gt;LeetCode 956 | Tallest Billboard 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>LeetCode 964</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-964/</link>
-      <pubDate>Wed, 31 Jul 2019 19:14:33 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-964/</guid>
-      
-        <description>&lt;p&gt;LeetCode 964 | Least Operators to Express Number 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>LeetCode 464</title>
-      <link>https://csnotes.dev/post/leetcode/leetcode-464/</link>
-      <pubDate>Wed, 31 Jul 2019 10:13:43 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/leetcode/leetcode-464/</guid>
-      
-        <description>&lt;p&gt;LeetCode 464 | Can I Win 题解&lt;/p&gt;</description>
-      
-    </item>
-    
-    <item>
-      <title>Golang中的指针</title>
-      <link>https://csnotes.dev/post/golang/pointer-in-go/</link>
-      <pubDate>Wed, 31 Jul 2019 08:15:20 +0800</pubDate>
-      
-      <guid>https://csnotes.dev/post/golang/pointer-in-go/</guid>
-      
-        <description>&lt;p&gt;本文将介绍go语言中的指针转换和指针运算。&lt;/p&gt;</description>
+        <description></description>
       
     </item>
     

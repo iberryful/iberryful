@@ -6,10 +6,19 @@
     <description>Recent content in algorithms on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 02 Jan 2020 15:30:09 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 07 Jan 2020 12:30:09 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/tags/algorithms/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>数字签名简介</title>
+      <link>https://csnotes.dev/post/algorithms/digital-signature/</link>
+      <pubDate>Tue, 07 Jan 2020 12:30:09 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/post/algorithms/digital-signature/</guid>
+      <description>&lt;p&gt;本文介绍数字签名算法的原理。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>RSA算法原理</title>

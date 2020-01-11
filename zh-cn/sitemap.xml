@@ -2,6 +2,69 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://csnotes.dev/tags/algorithms/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/categories/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/math/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/categories/math/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/number-theory/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/post/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/tags/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://csnotes.dev/post/math/number-theory-i/</loc>
+    <lastmod>2020-01-11T12:30:09+08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://csnotes.dev/categories/algorithms/</loc>
     <lastmod>2020-01-07T12:30:09+08:00</lastmod>
     <changefreq>daily</changefreq>
@@ -9,42 +72,7 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/tags/algorithms/</loc>
-    <lastmod>2020-01-07T12:30:09+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/categories/</loc>
-    <lastmod>2020-01-07T12:30:09+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://csnotes.dev/tags/cryptography/</loc>
-    <lastmod>2020-01-07T12:30:09+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/</loc>
-    <lastmod>2020-01-07T12:30:09+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/post/</loc>
-    <lastmod>2020-01-07T12:30:09+08:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://csnotes.dev/tags/</loc>
     <lastmod>2020-01-07T12:30:09+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -65,14 +93,14 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/tags/leetcode/</loc>
+    <loc>https://csnotes.dev/categories/leetcode/</loc>
     <lastmod>2019-09-17T10:23:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/categories/leetcode/</loc>
+    <loc>https://csnotes.dev/tags/leetcode/</loc>
     <lastmod>2019-09-17T10:23:45+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
@@ -198,14 +226,14 @@
   </url>
   
   <url>
-    <loc>https://csnotes.dev/tags/golang/</loc>
+    <loc>https://csnotes.dev/categories/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://csnotes.dev/categories/golang/</loc>
+    <loc>https://csnotes.dev/tags/golang/</loc>
     <lastmod>2019-07-31T08:15:20+08:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

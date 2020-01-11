@@ -6,7 +6,7 @@
     <description>Recent content in Tags on CS Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 07 Jan 2020 12:30:09 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 11 Jan 2020 12:30:09 +0800</lastBuildDate>
     
 	<atom:link href="https://csnotes.dev/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,27 @@
     <item>
       <title>algorithms</title>
       <link>https://csnotes.dev/tags/algorithms/</link>
-      <pubDate>Tue, 07 Jan 2020 12:30:09 +0800</pubDate>
+      <pubDate>Sat, 11 Jan 2020 12:30:09 +0800</pubDate>
       
       <guid>https://csnotes.dev/tags/algorithms/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>math</title>
+      <link>https://csnotes.dev/tags/math/</link>
+      <pubDate>Sat, 11 Jan 2020 12:30:09 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/tags/math/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>number theory</title>
+      <link>https://csnotes.dev/tags/number-theory/</link>
+      <pubDate>Sat, 11 Jan 2020 12:30:09 +0800</pubDate>
+      
+      <guid>https://csnotes.dev/tags/number-theory/</guid>
       <description></description>
     </item>
     
